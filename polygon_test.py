@@ -69,7 +69,7 @@ def polygon6a():
         ax.plot(e1.xs(), e1.ys(), "r")
         ax.plot(e2.xs(), e2.ys(), "r")
 
-    fig.show()
+    fig.savefig("figures/polygon6a.png")
 
 
 def polygon6b():
@@ -94,7 +94,7 @@ def polygon6b():
         yy = polygon.ys()
         ax.fill(xx, yy, col, alpha=0.5)
 
-    fig.show()
+    fig.savefig("figures/polygon6b.png")
 
 
 def polygon6c():
@@ -145,7 +145,7 @@ def polygon6c():
         ax.plot(e1.xs(), e1.ys(), "r")
         ax.plot(e2.xs(), e2.ys(), "r")
 
-    fig.show()
+    fig.savefig("figures/polygon6c.png")
 
 
 def polygon6d():
@@ -198,7 +198,7 @@ def polygon6d():
     ys = [inter.y for e1, e2, inter in intersections]
     ax.scatter(xs, ys)
 
-    fig.show()
+    fig.savefig("figures/polygon6d.png")
 
 
 def polygon7a():
@@ -248,7 +248,7 @@ def polygon7a():
         yy = polygon.ys()
         ax.fill(xx, yy, col, alpha=0.5)
 
-    fig.show()
+    fig.savefig("figures/polygon7a.png")
 
 
 def polygon7b():
@@ -314,7 +314,7 @@ def polygon7b():
     xs = [inter.x for e1, e2, inter in intersections]
     ys = [inter.y for e1, e2, inter in intersections]
     ax.scatter(xs, ys)
-    fig.show()
+    fig.savefig("figures/polygon7b.png")
 
 
 class PolygonTest(unittest.TestCase):
